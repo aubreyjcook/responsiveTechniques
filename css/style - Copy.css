@@ -1,0 +1,165 @@
+/* Fonts
+    Headers: font-family: 'Righteous', cursive;
+    Paragraphs: font-family: 'Prompt', sans-serif;
+*/
+
+
+/* Colors */
+
+* {
+    /* clears inherited padding/margin */
+    padding: 0px;
+    margin: 0px;
+    /* reponsive column design */
+    box-sizing: border-box;
+}
+
+
+/* begin content general styling */
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: white;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+footer,
+header {
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+
+/* end of content general styling */
+
+/* begin font general styling */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+p {
+    font-family: 'Prompt', sans-serif;
+    padding: 5px;
+    color: black;
+}
+
+
+/* end of font general styling */
+
+
+/* begin specific styling */
+
+footer {
+    border: 5px solid black;
+    clear: both;
+}
+
+footer h6 {
+    float: right;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: inherit;
+}
+
+.button {
+    background-color: rgb(33, 33, 33);
+    color: ghostwhite;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 3px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: lightyellow;
+    color: midnightblue;
+}
+
+
+/* end of specific styling */
+
+
+/* column grid view */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
